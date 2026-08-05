@@ -5,11 +5,13 @@ let imagen = document.getElementById("imagenPro");
 let btnGuardar = document.querySelector(".btnGuardar")
 
 //agregarle un evento al boton
-btnGuardar.addEventListener("click",function(){
-    let pro=validForm();
-    saveProduct(pro);
-    console.log("producto",pro)
+btnGuardar.addEventListener("click", function () {
+    let pro = validForm();
 
+    if (pro) {
+        saveProduct(pro);
+        console.log("producto", pro);
+    }
 });
 
 //obetner y validar

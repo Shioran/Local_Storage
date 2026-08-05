@@ -1,3 +1,5 @@
+# No sabía que le estaba metiendo al codigo un martes, ahi le dejo el readme y literal solo para meterme de chismoso 
+
 # Local_Storage
 
 Un CRUD simple de una tienda usando LocalStorage del navegador.
@@ -22,10 +24,7 @@ Tecnologías
 
 Instalación y uso
 -----------------
-1. Clona el repositorio o descarga los archivos.
-
-   git clone https://github.com/CamiloOrozco-dev/Local_Storage.git
-
+1, Git clone command execution 
 2. Abre `index.html` en tu navegador (doble clic o abre con "Open File").
 3. Usa el formulario para añadir productos. Los cambios se guardarán automáticamente en LocalStorage.
 
@@ -41,22 +40,4 @@ Notas y recomendaciones
 - Para restablecer la aplicación, puedes borrar el LocalStorage desde las herramientas de desarrollador del navegador o usar la opción de eliminar productos en la interfaz.
 - Esta aplicación es solo front-end; no usa servidor ni base de datos.
 
-Cómo contribuir
-----------------
-Si deseas mejorar el proyecto, puedes:
-- Añadir validaciones más robustas en el formulario.
-- Mejorar la interfaz con CSS o un framework ligero.
-- Añadir filtros, búsqueda y ordenamiento de productos.
-- Implementar export/import de datos (JSON).
 
-Licencia
---------
-Este proyecto no tiene una licencia especificada. Si quieres, puedo añadir una (por ejemplo MIT). Indica cuál prefieres.
-
-Autor
------
-Camilo Orozco
-
-Contacto
---------
-Puedes contactarme mediante mi perfil de GitHub: https://github.com/CamiloOrozco-dev

@@ -1,0 +1,91 @@
+body{
+    background: #f4f6f9!important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Contenedor */
+.container{
+    margin-top: 40px;
+}
+
+/* Tarjeta del formulario */
+.card{
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+
+/* Título */
+.card h2{
+    font-weight: bold;
+    color: #333;
+}
+
+/* Inputs */
+.form-control{
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.form-control:focus{
+    border-color: #0d6efd;
+    box-shadow: 0 0 10px rgba(13,110,253,.2);
+}
+
+/* Botones */
+.btn{
+    border-radius: 10px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn:hover{
+    transform: translateY(-2px);
+}
+
+/* Tabla */
+.table{
+    margin-top: 30px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table thead{
+    background: #0d6efd;
+    color: white;
+}
+
+.table th,
+.table td{
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Imagen */
+.table img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Botones de acciones */
+.btn-warning,
+.btn-danger{
+    margin: 2px;
+}
+
+/* Responsive */
+@media (max-width:768px){
+
+    .table{
+        font-size:14px;
+    }
+
+    .table img{
+        width:50px;
+        height:50px;
+    }
+
+}

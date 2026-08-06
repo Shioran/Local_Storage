@@ -50,7 +50,6 @@ function saveProduct(product){
 }
 
 function getProducts(){
-    console.log("Entré a getProducts");
     let productPrevius = JSON.parse(localStorage.getItem("lista-pro")) || [];
     if (productPrevius != null) {
         productos = productPrevius;
@@ -84,7 +83,7 @@ function deleteProduct(i) {
         getProducts();
         alert("Producto eliminado con exito");
     }
-    productPrevius.splice(index, 1);
+    productPrevius.splice(i, 1);
 }
 
 function editProduct(i) {

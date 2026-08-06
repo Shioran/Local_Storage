@@ -87,6 +87,36 @@ function deleteProduct(i) {
     productPrevius.splice(index, 1);
 }
 
+function editProduct(i) {
+    let productPrevius = JSON.parse(localStorage.getItem("lista-pro")) || [];
+
+    nombre.value = productPrevius[i].nombre;
+    precio.value = productPrevius[i].precio;
+    cantidad.value = productPrevius[i].cantidad;
+    imagen.value = productPrevius[i].imagen;
+
+    let btnActualizar = document.querySelector(".btnActualizar");
+    btnActualizar.classList.toggle("d-none");
+    btnGuardar.classList.toggle("d-none");
+
+    btnActualizar.addEventListener("click", function () {
+    productPrevius[i].nombre = nombre.value;
+    productPrevius[i].precio = precio.value;
+    productPrevius[i].cantidad = cantidad.value;
+    productPrevius[i].imagen = imagen.value;
+    localStorage.setItem("lista-pro", JSON.stringify(productPrevius));
+    tabla.innerHTML = "";
+    getProducts();
+    alert("Producto actualizado con exito");
+    btnActualizar.classList.toggle("d-none");
+    btnGuardar.classList.toggle("d-none");
+    nombre.value = "";
+    precio.value = "";
+    cantidad.value = "";
+    imagen.value = "";
+    })
+
+}
 
 document.addEventListener("DOMContentLoaded", function () {
     getProducts();

@@ -72,6 +72,22 @@ function getProducts(){
         tabla.appendChild(fila);
 });
 }
+
+function deleteProduct(i) {
+    let productPrevius = JSON.parse(localStorage.getItem("lista-pro")) || [];
+
+    let confirmar = confirm("¿Desea eliminar el producto?");
+    if (confirmar) {
+        productPrevius.splice(i, 1);
+        localStorage.setItem("lista-pro", JSON.stringify(productPrevius));
+        tabla.innerHTML = "";
+        getProducts();
+        alert("Producto eliminado con exito");
+    }
+    productPrevius.splice(index, 1);
+}
+
+
 document.addEventListener("DOMContentLoaded", function () {
     getProducts();
 })
